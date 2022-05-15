@@ -6,7 +6,6 @@ namespace CUR_CSHARP
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             WildRiftConsole a = new WildRiftConsole();

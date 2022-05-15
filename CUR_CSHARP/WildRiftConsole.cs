@@ -2,8 +2,11 @@
 
 namespace CUR_CSHARP
 {
+    // 와일드 리프트 게임을 주관한다.
     public class WildRiftConsole
     {
+        public WildRiftUser activeUser = null;
+
         // 유저에게 안내문구 보여주고, 실패시 해당 안내문구를 반복해서 선택하도록 한다.
         public abstract class UserInterface // 개념
         {
@@ -13,6 +16,13 @@ namespace CUR_CSHARP
 
             protected abstract bool IsInputAvailable(); // bool true, false, Is___
             protected abstract void Init(); // 반드시 초기화, Run Interface 이전에 호출
+
+            protected virtual void ProcessResultByInput(int inSelectedInput)
+            {
+                // 있어도 되고, 없으면 부모꺼 호출한다.
+                Console.WriteLine("Default ProcssResult By Input Called");
+            }
+
             public void RunInterface() // 함수는 동사로 한다.
             {
                 this.Init();
@@ -24,28 +34,14 @@ namespace CUR_CSHARP
                     selectInput = int.Parse(Console.ReadLine());
 
                     isInputAvailable = IsInputAvailable(); // 인풋이 true, 리트라이는 false,                                                           
-                } while (!isInputAvailable);                
+                } while (!isInputAvailable);
+
+                // 가능한 입력이 들어왔다면? 입력을 처리해야한다. 각자의 인터페이스에서!
+                if (isInputAvailable)
+                    ProcessResultByInput(selectInput);
             }
-
-            
-        }
-
-        // 캐릭터를 선택창을 만듦!
-        public class CharacterSelectInterface : UserInterface
-        {
-            protected override void Init()
-            {
-                ExplainText = "캐릭터를 선택해 주세요.\n1.가렌, 2.베인\n";
-            }
-
-            protected override bool IsInputAvailable()
-            {
-                if (selectInput != 1 && selectInput != 2)
-                    return false;
-
-                return true;
-            }
-        }
+        }        
+        
 
 
         public void Run()
@@ -64,6 +60,7 @@ namespace CUR_CSHARP
 
             // 캐릭터 선택
             CharacterSelectInterface characterSelectInterface = new CharacterSelectInterface();
+            characterSelectInterface.SetUser(this);
             characterSelectInterface.RunInterface(); // Run
 
             // 맵 선택
@@ -74,7 +71,7 @@ namespace CUR_CSHARP
             if (mapSelectInterface.GetSelectedInput == 1)
             {
                 // 상점 선택시
-                ShopInterface shopInterface = new ShopInterface();
+                ShopInterface shopInterface = new ShopInterface();                
                 shopInterface.RunInterface();
             }
             else
