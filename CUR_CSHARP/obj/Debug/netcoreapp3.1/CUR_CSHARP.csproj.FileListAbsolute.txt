@@ -1,0 +1,13 @@
+C:\Users\pc\source\repos\CUR_CSHARP\CUR_CSHARP\bin\Debug\netcoreapp3.1\CUR_CSHARP.exe
+C:\Users\pc\source\repos\CUR_CSHARP\CUR_CSHARP\bin\Debug\netcoreapp3.1\CUR_CSHARP.deps.json
+C:\Users\pc\source\repos\CUR_CSHARP\CUR_CSHARP\bin\Debug\netcoreapp3.1\CUR_CSHARP.runtimeconfig.json
+C:\Users\pc\source\repos\CUR_CSHARP\CUR_CSHARP\bin\Debug\netcoreapp3.1\CUR_CSHARP.runtimeconfig.dev.json
+C:\Users\pc\source\repos\CUR_CSHARP\CUR_CSHARP\bin\Debug\netcoreapp3.1\CUR_CSHARP.dll
+C:\Users\pc\source\repos\CUR_CSHARP\CUR_CSHARP\bin\Debug\netcoreapp3.1\CUR_CSHARP.pdb
+C:\Users\pc\source\repos\CUR_CSHARP\CUR_CSHARP\obj\Debug\netcoreapp3.1\CUR_CSHARP.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\CUR_CSHARP\CUR_CSHARP\obj\Debug\netcoreapp3.1\CUR_CSHARP.AssemblyInfoInputs.cache
+C:\Users\pc\source\repos\CUR_CSHARP\CUR_CSHARP\obj\Debug\netcoreapp3.1\CUR_CSHARP.AssemblyInfo.cs
+C:\Users\pc\source\repos\CUR_CSHARP\CUR_CSHARP\obj\Debug\netcoreapp3.1\CUR_CSHARP.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\CUR_CSHARP\CUR_CSHARP\obj\Debug\netcoreapp3.1\CUR_CSHARP.dll
+C:\Users\pc\source\repos\CUR_CSHARP\CUR_CSHARP\obj\Debug\netcoreapp3.1\CUR_CSHARP.pdb
+C:\Users\pc\source\repos\CUR_CSHARP\CUR_CSHARP\obj\Debug\netcoreapp3.1\CUR_CSHARP.genruntimeconfig.cache
